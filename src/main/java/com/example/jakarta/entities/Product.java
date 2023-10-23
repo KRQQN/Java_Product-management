@@ -1,6 +1,6 @@
-package com.example.warehouseapi.entities;
+package com.example.jakarta.entities;
 
-import org.Labb3.enums.categories;
+import com.example.jakarta.enums.Categories;
 import org.jetbrains.annotations.TestOnly;
 import java.time.Clock;
 import java.time.LocalDateTime;
@@ -11,11 +11,11 @@ public class Product {
     private final int id;
     private final LocalDateTime created;
     private String name;
-    private categories category;
+    private Categories category;
     private int rating;
     private LocalDateTime modified;
 
-    public Product(String name, categories category) {
+    public Product(String name, Categories category) {
         productsCreated++;
         this.id = productsCreated;
         this.name = name;
@@ -25,7 +25,7 @@ public class Product {
     }
 
     @TestOnly
-    public Product(int id, String name, categories category, Clock mockClock) {
+    public Product(int id, String name, Categories category, Clock mockClock) {
         productsCreated++;
         this.id = id;
         this.name = name;
@@ -35,7 +35,7 @@ public class Product {
     }
 
     @TestOnly
-    public Product(int id, String name, categories category) {
+    public Product(int id, String name, Categories category) {
         productsCreated++;
         this.id = id;
         this.name = name;
@@ -66,11 +66,11 @@ public class Product {
         return this;
     }
 
-    public categories getCategory() {
+    public Categories getCategory() {
         return category;
     }
 
-    public Product setCategory(categories category) {
+    public Product setCategory(Categories category) {
         this.category = category;
         return this;
     }

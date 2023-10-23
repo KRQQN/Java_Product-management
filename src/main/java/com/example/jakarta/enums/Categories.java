@@ -1,6 +1,6 @@
-package com.example.warehouseapi.enums;
+package com.example.jakarta.enums;
 
-public enum categories {
+public enum Categories {
     HEAVY_METAL,
     OPERA,
     HOUSE,

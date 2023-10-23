@@ -1,10 +1,10 @@
-package com.example.warehouseapi.entities;
+package com.example.jakarta.entities;
 
-import org.Labb3.enums.categories;
+import com.example.jakarta.enums.Categories;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
-public record ProductDto(int id, String name, categories category, int rating,
+public record ProductDto(int id, String name, Categories category, int rating,
                          LocalDateTime created, LocalDateTime modified) {
 
     public static ProductDto objToRecord(Product p) {
@@ -31,7 +31,7 @@ public record ProductDto(int id, String name, categories category, int rating,
         )).orElseGet(() -> new ProductDto(
                 0,
                 "",
-                categories.NA,
+                Categories.NA,
                 0, LocalDateTime.now().minusYears(200),
                 LocalDateTime.now().minusYears(200))
         );

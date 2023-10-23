@@ -1,38 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="WarehouseApi:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aff115f-c655-4ccc-b3b2-954114ae6580" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3aff115f-c655-4ccc-b3b2-954114ae6580" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="AnnotationType" />
+        <option value="Record" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KRQQN"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fd6099bf-48f8-4f3c-a3d9-455bb0eac92a" />
+        <option name="url" value="https://github.com/KRQQN/Labb2sa.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2W4Zzf4I6xZyXREGBFDj94fAoWy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rksof/IdeaProjects/JAKARTA/src/main/java/com/example/jakarta&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.42521995&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rksof\IdeaProjects\JAKARTA\src\main\java\com\example\jakarta" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JBoss/WildFly 29.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 29.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JAKARTA-1.0-SNAPSHOT" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="WarehouseApi:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50999" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JAKARTA:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,8 +173,69 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695994081955</updated>
-      <workItem from="1695994083152" duration="2000" />
+      <workItem from="1695994083152" duration="492000" />
+      <workItem from="1695994614910" duration="160000" />
+      <workItem from="1695994915923" duration="1334000" />
+      <workItem from="1696401603700" duration="11933000" />
+      <workItem from="1696935020144" duration="26751000" />
+      <workItem from="1697185752588" duration="7385000" />
+      <workItem from="1697525885333" duration="4597000" />
+      <workItem from="1697611322195" duration="3311000" />
+      <workItem from="1697709320995" duration="39449000" />
+      <workItem from="1698054984734" duration="16696000" />
+      <workItem from="1698387850721" duration="1589000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1698137309351</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698137309351</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Docker">
+      <option name="closed" value="true" />
+      <created>1698394565436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698394565436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Docker" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/3.0.0/jakarta.validation-api-3.0.0.jar!/jakarta/validation/ValidationException.class</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
