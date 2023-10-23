@@ -1,14 +1,8 @@
-package com.example.warehouseapi;
-
-import org.Labb3.service.Warehouse;
+package com.example.jakarta;
 
 public class App {
 
-
     public static void main(String[] args) {
-        Warehouse wh = new Warehouse();
-
-
-
+        // herru
     }
 }

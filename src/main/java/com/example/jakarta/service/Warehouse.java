@@ -1,33 +1,34 @@
-package com.example.warehouseapi.service;
+package com.example.jakarta.service;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.validation.constraints.NotEmpty;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.TestOnly;
-import org.Labb3.entities.Product;
-import org.Labb3.entities.ProductDto;
-
+import com.example.jakarta.entities.Product;
+import com.example.jakarta.entities.ProductDto;
 import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.YearMonth;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-
-import org.Labb3.enums.categories;
+import com.example.jakarta.enums.Categories;
 
 import static java.util.stream.Collectors.counting;
-import static org.Labb3.entities.ProductDto.objToRecord;
+import static com.example.jakarta.entities.ProductDto.objToRecord;
 
-
-public final class Warehouse {
+@ApplicationScoped
+public class Warehouse  {
     private final List<Product> products;
-    Predicate<String> validStrLength = value -> value.length() > 2;
+    Predicate<String> validStrLength = value -> value.length() >= 2;
     Predicate<Integer> validRating_0_10 = rating -> rating >= 0 && rating <= 10;
 
     public Warehouse() {
-        this.products = new ArrayList<>();
+        this.products = new CopyOnWriteArrayList<>();
     }
 
-    public boolean addProduct(@NotNull String name, @NotNull categories category) {
+    public boolean addProduct(@NotEmpty String name, Categories category) {
         boolean res = validStrLength.test(name);
 
         if (res) products.add(new Product(name, category));
@@ -35,7 +36,7 @@ public final class Warehouse {
     }
 
     @TestOnly
-    public boolean addProduct(int id, @NotNull String name, @NotNull categories category, Clock mockClock) {
+    public boolean addProduct(int id, @NotEmpty String name,Categories category, Clock mockClock) {
         boolean res = validStrLength.test(name);
 
         if (res) products.add(new Product(id, name, category, mockClock));
@@ -43,7 +44,7 @@ public final class Warehouse {
     }
 
     @TestOnly
-    public boolean addProduct(int id, @NotNull String name, @NotNull categories category) {
+    public boolean addProduct(int id, @NotEmpty String name,Categories category) {
         boolean res = validStrLength.test(name);
 
         if (res && findProductById(id).isEmpty()) products.add(new Product(id, name, category));
@@ -56,7 +57,7 @@ public final class Warehouse {
                 .toList();
     }
 
-    public boolean editProduct(int id, String name, categories category, int rating) {
+    public boolean editProduct(int id, String name, Categories category, int rating) {
         Optional<Product> res = findProductById(id);
         boolean validName = validStrLength.test(name);
         boolean validRating = validRating_0_10.test(rating);
@@ -94,23 +95,23 @@ public final class Warehouse {
     public List<ProductDto> getProductsByCategory(String categoryToFind) {
         return products.stream()
                 .sorted(Comparator.comparing(Product::getName))
-                .filter(prod -> prod.getCategory().equals(categories.valueOf(categoryToFind)))
+                .filter(prod -> prod.getCategory().equals(Categories.valueOf(categoryToFind)))
                 .map(ProductDto::objToRecord)
                 .toList();
     }
 
-    public Map<Character, Long> ammountOfProductsByFirstLetter() {
+    public Map<Character, Long> amountOfProductsByFirstLetter() {
         return products.stream()
                 .collect(Collectors.groupingBy(
                         product -> product.getName().toUpperCase().charAt(0), counting()
                 ));
     }
 
-    public int ammountOfProductsByCategory(String category) {
+    public int amountOfProductsByCategory(String category) {
         return getProductsByCategory(category).size();
     }
 
-    public Map<categories, List<ProductDto>> getCategoriesWithContent() {
+    public Map<Categories, List<ProductDto>> getCategoriesWithContent() {
         return products.stream()
                 .map(ProductDto::objToRecord)
                 .collect(Collectors.groupingBy(ProductDto::category));
