@@ -32,7 +32,7 @@ public class ProductsResource {
     @POST
     @Path("/addProduct")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response addProduct(AddProductInput input) {
+    public Response addProduct(@Valid AddProductInput input) {
 
         return warehouse.addProduct(input.name(), Categories.valueOf(input.category()))
                 ? Response.status(CREATED).build()
